@@ -1,5 +1,5 @@
 import { Footer, Navbar } from "../components";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Register = () => {
@@ -7,6 +7,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -24,7 +25,7 @@ const Register = () => {
         password: password,
       })
     );
-    window.location.href = "/login";
+    navigate("/login");
     setName("");
     setEmail("");
     setPassword("");

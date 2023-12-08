@@ -1,7 +1,6 @@
 {
   "homepage": "https://Khangpro3107.github.io/Mudiem",
   "name": "mudiem",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
