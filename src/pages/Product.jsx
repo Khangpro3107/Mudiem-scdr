@@ -23,11 +23,18 @@ const Product = () => {
   useEffect(() => {
     const getProduct = () => {
       setLoading(true);
-      setLoading2(true);
       setTimeout(() => {
         setProduct(products.products.filter((prod) => prod.id === id)[0]);
         setLoading(false);
       }, 500);
+    };
+    getProduct();
+    window.scrollTo(0, 0);
+  }, [id]);
+
+  useEffect(() => {
+    const getSimilarProducts = () => {
+      setLoading2(true);
       setTimeout(() => {
         setSimilarProducts(
           products.products.filter((prod) => prod.category === product.category)
@@ -35,9 +42,8 @@ const Product = () => {
         setLoading2(false);
       }, 750);
     };
-    getProduct();
-    window.scrollTo(0, 0);
-  }, [id, product.category]);
+    getSimilarProducts();
+  }, [product.category]);
 
   const Loading = () => {
     return (
