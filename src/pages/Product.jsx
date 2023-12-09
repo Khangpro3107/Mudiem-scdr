@@ -23,10 +23,12 @@ const Product = () => {
   useEffect(() => {
     const getProduct = () => {
       setLoading(true);
-      setTimeout(() => {
-        setProduct(products.products.filter((prod) => prod.id === id)[0]);
-        setLoading(false);
-      }, 500);
+      // setTimeout(() => {
+      //   setProduct(products.products.filter((prod) => prod.id === id)[0]);
+      //   setLoading(false);
+      // }, 500);
+      setProduct(products.products.filter((prod) => prod.id === id)[0]);
+      setLoading(false);
     };
     getProduct();
     window.scrollTo(0, 0);
@@ -35,12 +37,16 @@ const Product = () => {
   useEffect(() => {
     const getSimilarProducts = () => {
       setLoading2(true);
-      setTimeout(() => {
-        setSimilarProducts(
-          products.products.filter((prod) => prod.category === product.category)
-        );
-        setLoading2(false);
-      }, 750);
+      // setTimeout(() => {
+      //   setSimilarProducts(
+      //     products.products.filter((prod) => prod.category === product.category)
+      //   );
+      //   setLoading2(false);
+      // }, 750);
+      setSimilarProducts(
+        products.products.filter((prod) => prod.category === product.category)
+      );
+      setLoading2(false);
     };
     getSimilarProducts();
   }, [product.category]);

@@ -11,10 +11,3 @@ export const delCart = (product) => {
     payload: product,
   };
 };
-
-export const setCount = (info) => {
-  return {
-    type: "SET",
-    payload: info,
-  };
-};

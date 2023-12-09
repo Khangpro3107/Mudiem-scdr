@@ -12,8 +12,9 @@ const Footer = () => {
               href="https://github.com/Khangpro3107/E-Commerce-Assignment-231"
               target="_blank"
               rel="noreferrer"
+              aria-label="GitHub repo"
             >
-              <i className="fa fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
           </div>
         </div>

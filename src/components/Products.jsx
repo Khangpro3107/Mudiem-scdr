@@ -46,11 +46,14 @@ const Products = () => {
     const getProducts = () => {
       setLoading(true);
       if (componentMounted) {
-        setTimeout(() => {
-          setData(products.products);
-          setFiltering(products.products);
-          setLoading(false);
-        }, 500);
+        // setTimeout(() => {
+        //   setData(products.products);
+        //   setFiltering(products.products);
+        //   setLoading(false);
+        // }, 500);
+        setData(products.products);
+        setFiltering(products.products);
+        setLoading(false);
       }
 
       return () => {
@@ -135,7 +138,7 @@ const Products = () => {
                     height={400}
                   />
                   <div className="card-body">
-                    <h5 className="card-title">{product.title}</h5>
+                    <p className="card-title h5">{product.title}</p>
                     <p className="card-text">
                       {product.description.substring(0, 90)}...
                     </p>
