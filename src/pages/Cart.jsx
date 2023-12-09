@@ -108,6 +108,8 @@ const Cart = () => {
                                   onClick={() => {
                                     removeItem(item);
                                   }}
+                                  aria-label="add"
+                                  name="add"
                                 >
                                   <i className="fas fa-minus"></i>
                                 </button>
@@ -119,6 +121,8 @@ const Cart = () => {
                                   onClick={() => {
                                     addItem(item);
                                   }}
+                                  aria-label="minus"
+                                  name="minus"
                                 >
                                   <i className="fas fa-plus"></i>
                                 </button>
@@ -169,7 +173,7 @@ const Cart = () => {
 
                     <Link
                       to="/checkout"
-                      className="btn btn-primary-2 btn-lg btn-block"
+                      className="btn btn-primary-2 text-dark btn-lg btn-block"
                     >
                       <i className="fa fa-arrow-circle-right"></i> Go to
                       checkout
