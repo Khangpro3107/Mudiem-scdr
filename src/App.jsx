@@ -22,7 +22,7 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          {/* <Route index path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/product" element={<Products />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/about" element={<AboutPage />} />
@@ -32,8 +32,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="*" element={<PageNotFound />} />
-          <Route path="/product/*" element={<PageNotFound />} /> */}
-          <Route path="/" element={<Home />}>
+          <Route path="/product/*" element={<PageNotFound />} />
+          {/* <Route path="/" element={<Home />}>
             <Route path="product" element={<Products />} />
             <Route path="product/:id" element={<Product />} />
             <Route path="about" element={<AboutPage />} />
@@ -44,7 +44,7 @@ function App() {
             <Route path="checkout" element={<Checkout />} />
             <Route path="product/*" element={<PageNotFound />} />
             <Route path="*" element={<PageNotFound />} />
-          </Route>
+          </Route> */}
         </Routes>
       </BrowserRouter>
     </Provider>
