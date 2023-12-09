@@ -14,7 +14,7 @@ const Footer = () => {
               rel="noreferrer"
               aria-label="GitHub repo"
             >
-              <i className="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i> GitHub
             </a>
           </div>
         </div>

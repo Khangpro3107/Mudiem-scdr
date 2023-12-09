@@ -34,7 +34,7 @@ const AboutPage = () => {
                 height={160}
               />
               <div className="card-body">
-                <h5 className="card-title text-center">Mens's Clothing</h5>
+                <h5 className="card-title text-center">Men's Clothing</h5>
               </div>
             </div>
           </div>
