@@ -19,8 +19,8 @@ import {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Provider store={store}>
+    <Provider store={store}>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Products />} />
@@ -34,8 +34,8 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
           <Route path="/product/*" element={<PageNotFound />} />
         </Routes>
-      </Provider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </Provider>
   );
 }
 
